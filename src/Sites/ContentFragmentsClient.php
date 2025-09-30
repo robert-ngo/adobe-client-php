@@ -145,7 +145,9 @@ final class ContentFragmentsClient
 
     private function encodePath(string $path): string
     {
-        return '/' . ltrim(str_replace('%2F', '/', rawurlencode($path)), '/');
+        // Keep slashes percent-encoded so the repository path remains a single path segment
+        // e.g., "/content/dam/site/x" -> "%2Fcontent%2Fdam%2Fsite%2Fx"
+        return '/' . ltrim(rawurlencode($path), '/');
     }
 }
 

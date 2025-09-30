@@ -1,0 +1,14 @@
+version: "3.6"
+services:
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: ddev-${DDEV_SITENAME}-phpmyadmin
+    environment:
+      - PMA_HOST=db
+      - VIRTUAL_HOST=$DDEV_HOSTNAME
+      - HTTPS_EXPOSE=8036:80
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    external_links:
+      - ddev-${DDEV_SITENAME}-db:db

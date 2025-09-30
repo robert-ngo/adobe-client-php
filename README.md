@@ -38,6 +38,21 @@ $pages = $sdk->sites()->listPages('/content/we-retail');
 $asset = $sdk->assets()->get('/content/dam/path/to/asset.jpg');
 ```
 
+## DDEV (Optional)
+
+Use DDEV for a reproducible PHP 8.2 environment with Composer and PHPUnit installed.
+
+```bash
+# Start DDEV (requires ddev installed locally)
+ddev start
+
+# Install dependencies
+ddev composer install
+
+# Run tests
+ddev phpunit -q
+```
+
 ## Architecture
 
 - Core: PSR-18 HTTP client wrapper, config

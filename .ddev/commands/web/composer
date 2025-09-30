@@ -1,0 +1,6 @@
+#!/bin/bash
+## Description: Run composer in the web container
+## Usage: ddev composer [args]
+set -euo pipefail
+composer "$@"
+
