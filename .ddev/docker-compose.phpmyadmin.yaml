@@ -12,3 +12,4 @@ services:
       com.ddev.approot: $DDEV_APPROOT
     external_links:
       - ddev-${DDEV_SITENAME}-db:db
+
