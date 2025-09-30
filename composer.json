@@ -1,0 +1,36 @@
+{
+  "name": "robertngo/adobe-client-php",
+  "description": "PSR-compliant PHP SDK for Adobe Experience Cloud (AEM, AJO)",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "psr/http-client": "^1.0",
+    "psr/http-message": "^1.1 || ^2.0",
+    "psr/http-factory": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "vimeo/psalm": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Adobe\\Client\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Adobe\\Client\\Tests\\": "tests/"
+    }
+  },
+  "suggest": {
+    "guzzlehttp/guzzle": "^7.8|^7.9 to use Guzzle as the PSR-18 client",
+    "guzzlehttp/psr7": "^2.6 to use Guzzle PSR-7 implementation",
+    "http-interop/http-factory-guzzle": "^1.2 to use Guzzle PSR-17 factories"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}

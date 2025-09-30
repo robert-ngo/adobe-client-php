@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+---
+
+# Use SOLID principles:
+
+- Single Responsibility: Separate request building, error handling, config.
+- Interface Segregation: Define contracts for components.
+- Dependency Injection: Inject HTTP clients (like Guzzle).
+
+# Follow PSR Standards:
+
+- PSR-4 for autoloading
+- PSR-7 for HTTP messages
+- PSR-18 for HTTP client abstraction
+- PSR-12 for coding style
