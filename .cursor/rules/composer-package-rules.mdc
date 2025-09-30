@@ -14,3 +14,12 @@ alwaysApply: true
 - PSR-7 for HTTP messages
 - PSR-18 for HTTP client abstraction
 - PSR-12 for coding style
+
+## PHP Standards
+
+- Always document methods, use short and simple explanations
+- Use PHP 8.1+ features when appropriate (typed properties, match expressions, etc.)
+- Follow Drupal's PHP coding standards (based on PSR-12 with modifications)
+- Always use strict typing: `declare(strict_types=1);`
+- Implement proper error handling with try-catch blocks and Drupal's logging system
+- Use type hints for method parameters and return types
