@@ -12,3 +12,5 @@
 .env.production
 
 vendor/
+.phpunit.result.cache
+tasks/
