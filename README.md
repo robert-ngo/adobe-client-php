@@ -5,7 +5,7 @@ PSR-compliant PHP SDK for Adobe Experience Cloud services (AEM Sites, AEM Assets
 ## Installation
 
 ```bash
-composer require robertngo/adobe-client-php
+composer require robert-ngo/adobe-client-php
 ```
 
 You must provide PSR-18 HTTP client and PSR-17 factories. For example, with Guzzle:
