@@ -3,3 +3,4 @@ set -euo pipefail
 export XDEBUG_MODE=coverage
 php ./vendor/bin/phpunit "$@"
 
+

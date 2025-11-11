@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php vendor/bin/phpunit:*)",
+      "Bash(ddev phpunit:*)",
+      "Bash(vendor/bin/phpunit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
