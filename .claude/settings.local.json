@@ -3,7 +3,9 @@
     "allow": [
       "Bash(php vendor/bin/phpunit:*)",
       "Bash(ddev phpunit:*)",
-      "Bash(vendor/bin/phpunit:*)"
+      "Bash(vendor/bin/phpunit:*)",
+      "Bash(make:*)",
+      "Bash(vendor/bin/psalm:*)"
     ],
     "deny": [],
     "ask": []
