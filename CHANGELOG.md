@@ -15,18 +15,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `SegmentJobsClient` for segment job processing
 - GitHub Actions CI/CD pipeline for automated testing
 - Psalm static analysis configuration
+- Makefile with 20+ developer commands
 - Contributing guidelines (CONTRIBUTING.md)
 - Security policy (SECURITY.md)
-- Project documentation (CLAUDE.md)
+- Changelog (CHANGELOG.md)
+- GitHub issue and PR templates
+- Comprehensive project documentation (CLAUDE.md, IMPROVEMENTS.md)
 
 ### Changed
+- **BREAKING**: Guzzle and PSR implementations now bundled as required dependencies
+  - Simplifies installation to single `composer require` command
+  - No longer need to manually install `guzzlehttp/psr7` and `http-interop/http-factory-guzzle`
+  - Still supports alternative PSR-18 clients for advanced users
 - Refactored monolithic SegmentationClient into entity-focused clients
-- Improved test coverage across all clients
-- Updated documentation with usage examples
+- Improved test coverage across all clients (52 tests, 176 assertions)
+- Updated documentation with simplified installation steps
 
 ### Fixed
 - URL encoding for IDs with special characters
 - Error handling consistency across all clients
+- Inconsistent dependency configuration in composer.json
 
 ## [0.1.0] - 2025-01-10
 
